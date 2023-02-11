@@ -3,8 +3,18 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `pwa`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: "PWA",
+    siteUrl: "https://pwa44378.gatsbyjs.io",
   },
-  plugins: [],
-}
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
+    },
+  ],
+};

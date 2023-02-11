@@ -18,12 +18,12 @@
     padding: 20px;
 }
 
-ul {
+.nav {
     list-style: none;
     padding: 0;
 }
 
-li {
+.nav-link {
     display: inline;
     padding-right: 30px;
     text-decoration: none;
